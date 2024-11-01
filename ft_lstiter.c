@@ -1,32 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/10 16:07:38 by brunogue          #+#    #+#             */
-/*   Updated: 2024/11/01 13:17:25 by brunogue         ###   ########.fr       */
+/*   Created: 2024/11/01 12:12:40 by brunogue          #+#    #+#             */
+/*   Updated: 2024/11/01 12:18:25 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	int	counter;
+	t_list	*temp;
 
-	counter = 0;
-	while (*s != '\0')
+	temp = lst;
+	while (temp)
 	{
-		s++;
-		counter++;
-	}
-	return (counter);
+		f(temp->content);
+		temp = temp->next;
+	}	
 }
-/*
-int	main (void)
-{
-	printf("%zu", ft_strlen("brunoskvkkvsadsasc"));
-	return (0);
-}*/

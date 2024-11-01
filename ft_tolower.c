@@ -6,11 +6,11 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 16:03:59 by brunogue          #+#    #+#             */
-/*   Updated: 2024/10/18 16:46:21 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/01 13:18:42 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_tolower(char c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 	{

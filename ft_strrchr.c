@@ -6,45 +6,49 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 12:46:44 by brunogue          #+#    #+#             */
-/*   Updated: 2024/10/17 16:24:49 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/10/28 18:50:07 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *str, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
-	int	x;
+	int		i;
+	int		x;
+	char	uc;
 
 	i = 0;
 	x = -1;
-	while (str[i] != '\0')
+	uc = (unsigned char)c;
+	while (s[i] != '\0')
 	{
-		if (str[i] == c)
+		if (s[i] == uc)
 		{
 			x = i;
 		}
 		i++;
 	}
+	if (uc == '\0')
+		return ((char *)s + i);
 	if (x != -1)
 	{
-		return ((char *)str + x);
+		return ((char *)s + x);
 	}
 	return (NULL);
 }
-/*
-int	main(void)
-{
-	char c = 'n';
-	char *result = ft_strrchr("brunobrnosalo", c);
-	if (result != NULL)
-	{
-		printf("Última ocorrência: %s\n", result);
-	}
-	else
-	{
-		printf("Caractere '%c' não encontrado.\n", c);
-	}
-	return (0);
-}*/
+
+// int	main(void)
+// {
+// 	char c = 'n';
+// 	char *result = ft_strrchr("brunobrnosalo", c);
+// 	if (result != NULL)
+// 	{
+// 		printf("Última ocorrência: %s\n", result);
+// 	}
+// 	else
+// 	{
+// 		printf("Caractere '%c' não encontrado.\n", c);
+// 	}
+// 	return (0);
+// }

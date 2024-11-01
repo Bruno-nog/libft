@@ -1,32 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/10 16:07:38 by brunogue          #+#    #+#             */
-/*   Updated: 2024/11/01 13:17:25 by brunogue         ###   ########.fr       */
+/*   Created: 2024/10/28 14:50:20 by brunogue          #+#    #+#             */
+/*   Updated: 2024/10/28 15:22:10 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+void	ft_putstr_fd(char *s, int fd)
 {
-	int	counter;
+	int	i;
 
-	counter = 0;
-	while (*s != '\0')
+	i = 0;
+	while (s[i] != '\0')
 	{
-		s++;
-		counter++;
+		ft_putchar_fd(s[i], fd);
+		i++;
 	}
-	return (counter);
 }
-/*
-int	main (void)
-{
-	printf("%zu", ft_strlen("brunoskvkkvsadsasc"));
-	return (0);
-}*/

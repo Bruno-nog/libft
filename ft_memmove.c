@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 18:09:44 by brunogue          #+#    #+#             */
-/*   Updated: 2024/10/20 16:21:28 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/10/29 16:48:01 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	unsigned char	*dst;
 	size_t			i;
 
+	if (dest == NULL && src == NULL)
+		return (NULL);
 	dst = (unsigned char *)dest;
 	s = (unsigned char *)src;
 	i = 0;

@@ -1,32 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/10 16:07:38 by brunogue          #+#    #+#             */
-/*   Updated: 2024/11/01 13:17:25 by brunogue         ###   ########.fr       */
+/*   Created: 2024/10/27 14:27:36 by brunogue          #+#    #+#             */
+/*   Updated: 2024/11/01 13:16:43 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-size_t	ft_strlen(const char *s)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	int	counter;
+	int	i;
 
-	counter = 0;
-	while (*s != '\0')
+	i = 0;
+	while (s[i] != '\0')
 	{
-		s++;
-		counter++;
+		f(i, &s[i]);
+		i++;
 	}
-	return (counter);
 }
-/*
-int	main (void)
-{
-	printf("%zu", ft_strlen("brunoskvkkvsadsasc"));
-	return (0);
-}*/
+
+// void my_function(unsigned int i, char c)
+// {
+// 	if (c >= 65 && c <= 90)
+// 		c += 32;
+// 	else if (c >= 97 && c <= 122)
+// 		c -= 32;
+// }
+
+// int	main(void)
+// {
+// 	char *str = "uma string";
+// 	printf("%s", ft_striteri(str, my_function));
+// 	return (0);
+//}

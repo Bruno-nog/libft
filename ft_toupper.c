@@ -6,11 +6,11 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:58:11 by brunogue          #+#    #+#             */
-/*   Updated: 2024/10/18 16:46:12 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/01 13:18:46 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_toupper(char c)
+int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{

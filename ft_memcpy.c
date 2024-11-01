@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 18:08:18 by brunogue          #+#    #+#             */
-/*   Updated: 2024/10/19 18:16:51 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/10/29 16:47:55 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char		*dst;
 	const unsigned char	*s;
 
+	if (dest == NULL && src == NULL)
+		return (NULL);
 	dst = ((unsigned char *)dest);
 	s = ((const unsigned char *)src);
 	i = 0;
@@ -28,6 +30,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
 /*
 int	main(void)
 {

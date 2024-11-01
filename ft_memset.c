@@ -6,13 +6,13 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:17:59 by brunogue          #+#    #+#             */
-/*   Updated: 2024/10/18 12:40:15 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/10/21 15:34:36 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*memset(void *s, int c, size_t n)
+void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*ptr;
 	size_t			i;
@@ -31,7 +31,7 @@ void	*memset(void *s, int c, size_t n)
 // {
 //     char buffer[10];
 // 	size_t n = 20;
-//     memset(buffer, 'A', n);
+//     ft_memset(buffer, 'A', n);
 
 //     buffer[n] = '\0';
 
