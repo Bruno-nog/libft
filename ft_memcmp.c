@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 17:20:10 by brunogue          #+#    #+#             */
-/*   Updated: 2024/10/21 18:03:01 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/01 14:42:44 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	printf("%d", ft_memcmp("   ", "  ", 9));
-// 	return (0);
-// }

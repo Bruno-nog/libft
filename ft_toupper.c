@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:58:11 by brunogue          #+#    #+#             */
-/*   Updated: 2024/11/01 13:18:46 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/01 14:45:58 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,3 @@ int	ft_toupper(int c)
 	}
 	return (c);
 }
-/*
-int	main(void)
-{
-	printf("%c", ft_toupper('d'));
-	return (0);
-}*/

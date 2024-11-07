@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/20 16:22:33 by brunogue          #+#    #+#             */
-/*   Updated: 2024/10/21 17:07:16 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/01 14:42:37 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-// int	main(void)
-// {
-// 	printf("%s", (char *)ft_memchr("something", 't', 8));
-// 	return (0);
-// }

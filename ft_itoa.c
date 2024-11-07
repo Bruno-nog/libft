@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 18:39:53 by brunogue          #+#    #+#             */
-/*   Updated: 2024/10/28 18:21:31 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/01 14:42:17 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,3 @@ char	*ft_itoa(int n)
 		new_str[0] = '-';
 	return (new_str);
 }
-
-// int	main(void)
-// {
-// 	return (0);
-// }

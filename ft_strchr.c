@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 16:13:17 by brunogue          #+#    #+#             */
-/*   Updated: 2024/10/29 16:52:57 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/01 14:43:28 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (NULL);
 }
-
-// int	main(void)
-// {
-// 	char c = 'h';
-// 	printf("%s", ft_strchr("bruhno", c));
-// 	return (0);
-// }

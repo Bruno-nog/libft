@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:20:19 by brunogue          #+#    #+#             */
-/*   Updated: 2024/11/01 12:49:12 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/07 11:50:16 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,18 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_list;
 	t_list	*new_obj;
+	void	*value;
 
 	if (!lst || !f || !del)
 		return (NULL);
 	new_list = NULL;
 	while (lst)
 	{
-		new_obj = ft_lstnew(f(lst->content));
+		value = f(lst->content);
+		new_obj = ft_lstnew(value);
 		if (!new_obj)
 		{
+			del(value);
 			ft_lstclear(&new_list, del);
 			return (NULL);
 		}

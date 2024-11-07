@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:55:00 by brunogue          #+#    #+#             */
-/*   Updated: 2024/10/24 18:23:17 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/01 14:44:03 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	new_str[i] = '\0';
 	return (new_str);
 }
-
-// int main(void)
-// {
-//     char s1[] = "Hello, ";
-//     char s2[] = "World!";
-//     printf("After concatenation: '%s'\n", ft_strjoin(s1, s2));
-//     return (0);
-// }

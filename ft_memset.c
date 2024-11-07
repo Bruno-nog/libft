@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:17:59 by brunogue          #+#    #+#             */
-/*   Updated: 2024/10/21 15:34:36 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/01 14:43:02 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,16 +26,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-
-// int main(void)
-// {
-//     char buffer[10];
-// 	size_t n = 20;
-//     ft_memset(buffer, 'A', n);
-
-//     buffer[n] = '\0';
-
-//     printf("%s\n", buffer);  
-
-//     return 0;
-// }

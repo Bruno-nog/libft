@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 13:13:28 by brunogue          #+#    #+#             */
-/*   Updated: 2024/10/24 16:46:23 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/01 14:44:08 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,13 +37,3 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	dest[dest_len + i] = '\0';
 	return (dest_len + src_len);
 }
-
-// int main(void)
-// {
-//     char dest[20] = "Hello, ";
-//     const char src[] = "World!";
-//     size_t result = ft_strlcat(dest, src, 20);
-//     printf("After concatenation: '%s'\n", dest);
-//     printf("Total length: %zu\n", result);
-//     return (0);
-// }

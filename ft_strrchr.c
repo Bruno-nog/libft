@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 12:46:44 by brunogue          #+#    #+#             */
-/*   Updated: 2024/10/28 18:50:07 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/01 14:45:13 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,18 +37,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-
-// int	main(void)
-// {
-// 	char c = 'n';
-// 	char *result = ft_strrchr("brunobrnosalo", c);
-// 	if (result != NULL)
-// 	{
-// 		printf("Última ocorrência: %s\n", result);
-// 	}
-// 	else
-// 	{
-// 		printf("Caractere '%c' não encontrado.\n", c);
-// 	}
-// 	return (0);
-// }

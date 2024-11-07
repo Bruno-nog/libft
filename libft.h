@@ -6,16 +6,13 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 12:42:12 by brunogue          #+#    #+#             */
-/*   Updated: 2024/11/01 12:49:40 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/02 15:14:14 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stddef.h>
-# include <string.h>
-# include <stdio.h>
 # include <stdlib.h>
 # include <limits.h>
 # include <unistd.h>

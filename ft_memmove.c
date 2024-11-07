@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 18:09:44 by brunogue          #+#    #+#             */
-/*   Updated: 2024/10/29 16:48:01 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/01 14:42:57 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,15 +38,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dst);
 }
-
-// int	main(void)
-// {
-// 	size_t n;
-// 	unsigned const char str_s[11] = "pasteyellow";
-// 	unsigned char str_d[] = "black";
-// 	unsigned char *result; 
-// 	n = 20;
-// 	result = ft_memmove(str_d, str_s, n);
-// 	printf("%s", result);
-// 	return (0);
-// }

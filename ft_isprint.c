@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 14:24:53 by brunogue          #+#    #+#             */
-/*   Updated: 2024/10/25 16:22:49 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/01 14:42:13 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,3 @@ int	ft_isprint(int c)
 	}
 	return (0);
 }
-/*
-int	main(void)
-{
-	printf("%d", ft_isprint('d'));
-	return (0);
-}*/

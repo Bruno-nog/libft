@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 14:22:45 by brunogue          #+#    #+#             */
-/*   Updated: 2024/10/23 16:27:52 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/07 12:08:31 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	ft_atoi(const char *nptr)
 	i = 0;
 	while (nptr[i] == ' ' || nptr[i] == '\t' || nptr[i] == '\n'
 		|| nptr[i] == '\v' || nptr[i] == '\f' || nptr[i] == '\r')
-			i++;
+		i++;
 	if (nptr[i] == '-' || nptr[i] == '+')
 	{
 		if (nptr[i] == '-')
@@ -50,9 +50,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (result * sign);
 }
-
-// int	main(void)
-// {
-// 	printf("%d", ft_atoi("2147483648"));
-// 	return (0);
-// }

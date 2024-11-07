@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 14:07:47 by brunogue          #+#    #+#             */
-/*   Updated: 2024/10/10 14:12:12 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/01 14:42:09 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,3 @@ int	ft_isdigit(int c)
 	}
 	return (0);
 }
-/*
-int	main(void)
-{
-	printf("%d", ft_isdigit('6'));
-	return (0);
-}*/

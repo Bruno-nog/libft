@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 18:26:31 by brunogue          #+#    #+#             */
-/*   Updated: 2024/10/23 19:30:45 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/01 14:43:35 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,24 +37,3 @@ char	*ft_strdup(const char *s)
 	new_str[i] = '\0';
 	return (new_str);
 }
-
-// int	main(void)
-// {
-//     char *original = "Olá, mundo!";
-//     char *copy;
-
-//     copy = ft_strdup(original);
-//     if (copy == NULL)
-//     {
-//         printf("Erro ao duplicar a string.\n");
-//         return (1);
-//     }
-
-//     printf("Original: %s\n", original);
-//     printf("copy: %s\n", copy);
-
-//     // Lembre-se de liberar a memória alocada
-//     free(copy);
-
-//     return (0);
-// }

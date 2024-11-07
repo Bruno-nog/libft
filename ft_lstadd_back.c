@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 11:56:43 by brunogue          #+#    #+#             */
-/*   Updated: 2024/11/01 13:02:04 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/07 12:09:34 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,5 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	if (!last)
 		*lst = new;
 	else
-	last->next = new;
+		last->next = new;
 }

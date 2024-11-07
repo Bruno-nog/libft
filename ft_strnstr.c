@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 13:13:15 by brunogue          #+#    #+#             */
-/*   Updated: 2024/10/17 16:24:35 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/01 14:45:06 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-/*
-int main(void)
-{
-	char big[] = "Hello, World!";
-	char little[] = "l";
-    char *result = ft_strnstr(big, little, 20);
-    printf("%s\n", result ? result : "Not found");
-    return 0;
-}*/

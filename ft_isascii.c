@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 14:19:06 by brunogue          #+#    #+#             */
-/*   Updated: 2024/10/17 16:22:53 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/01 14:42:05 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,3 @@ int	ft_isascii(int c)
 	}
 	return (0);
 }
-/*
-int	main(void)
-{
-	unsigned char c;
-
-	c = 'ç';
-	printf("%d", ft_isascii(c));
-	return (0);
-}*/

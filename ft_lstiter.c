@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:12:40 by brunogue          #+#    #+#             */
-/*   Updated: 2024/11/01 12:18:25 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/07 11:54:45 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 	{
 		f(temp->content);
 		temp = temp->next;
-	}	
+	}
 }

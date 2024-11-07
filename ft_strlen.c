@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 16:07:38 by brunogue          #+#    #+#             */
-/*   Updated: 2024/11/01 13:17:25 by brunogue         ###   ########.fr       */
+/*   Updated: 2024/11/01 14:44:39 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,3 @@ size_t	ft_strlen(const char *s)
 	}
 	return (counter);
 }
-/*
-int	main (void)
-{
-	printf("%zu", ft_strlen("brunoskvkkvsadsasc"));
-	return (0);
-}*/
