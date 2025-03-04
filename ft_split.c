@@ -3,14 +3,39 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 14:01:01 by brunogue          #+#    #+#             */
-/*   Updated: 2024/11/07 11:55:20 by brunogue         ###   ########.fr       */
+/*   Updated: 2025/03/04 19:14:34 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+char	*ft_substr(char const *s, unsigned int start, size_t len)
+{
+	char	*sub_str;
+	size_t	s_len;
+
+	if (s == NULL)
+		return (NULL);
+	s_len = ft_strlen(s);
+	if (start >= s_len)
+	{
+		sub_str = (char *)malloc(1);
+		if (sub_str == NULL)
+			return (NULL);
+		sub_str[0] = '\0';
+		return (sub_str);
+	}
+	if (len > s_len - start)
+		len = s_len - start;
+	sub_str = (char *)malloc(len + 1);
+	if (sub_str == NULL)
+		return (NULL);
+	ft_strlcpy(sub_str, s + start, len + 1);
+	return (sub_str);
+}
 
 static int	count_words(char const *s, char c)
 {
@@ -84,8 +109,7 @@ char	**ft_split(char const *s, char c)
 				return (free_result(result), NULL);
 			j++;
 		}
-		else
-			i++;
+		i++;
 	}
 	result[j] = NULL;
 	return (result);
